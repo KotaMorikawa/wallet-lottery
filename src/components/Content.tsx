@@ -72,7 +72,7 @@ const Content = ({ event_id }: { event_id: string }) => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-y-5">
-      <Toaster position="bottom-center" reverseOrder={true} />
+      <Toaster position="top-right" reverseOrder={true} />
       <div className="flex mt-5 flex-col justify-center gap-5 items-center w-full">
         <p className="text-white">
           Event Number :　
