@@ -34,7 +34,7 @@ export async function POST(req: Request) {
   } catch (error) {
     if (error instanceof Prisma.PrismaClientKnownRequestError) {
       if (error.code === "P2002") {
-        return Response.json("登録済みです", {
+        return Response.json("ウォレットアドレスが登録済みです", {
           status: 400,
         });
       } else {
