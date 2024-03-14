@@ -29,6 +29,7 @@ const Lottery = ({ event_id }: { event_id: string }) => {
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     toast.dismiss();
     setErrorMessage("");
+    setLotteryResult([]);
     const { count } = data;
     try {
       if (!count) {
